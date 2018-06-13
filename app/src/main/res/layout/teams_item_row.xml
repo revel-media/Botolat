@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txt_pos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:text="م"
+        android:theme="@style/text" />
+
+    <TextView
+        android:id="@+id/txt_teamname"
+        app:layout_constraintEnd_toStartOf="@+id/txt_pos"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="الفريق"
+        android:theme="@style/text" />
+
+    <TextView
+        android:id="@+id/txt_Play"
+        app:layout_constraintEnd_toStartOf="@+id/txt_teamname"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginTop="16dp"
+        android:text="لعب"
+        android:theme="@style/text" />
+
+    <TextView
+        android:id="@+id/txt_win"
+        app:layout_constraintEnd_toStartOf="@+id/txt_Play"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="16dp"
+        android:text="فوز"
+        android:theme="@style/text" />
+
+    <TextView
+        android:id="@+id/txt_draw"
+        app:layout_constraintEnd_toStartOf="@+id/txt_win"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="16dp"
+        android:text="تعادل"
+        android:theme="@style/text" />
+
+    <TextView
+        android:id="@+id/txt_los"
+        app:layout_constraintEnd_toStartOf="@+id/txt_draw"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="16dp"
+        android:text="هزيمة"
+        android:theme="@style/text" />
+
+    <TextView
+        android:id="@+id/txt_deff"
+        app:layout_constraintEnd_toStartOf="@+id/txt_los"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="16dp"
+        android:text="الفرق"
+        android:theme="@style/text" />
+
+    <TextView
+        android:id="@+id/txt_points"
+        app:layout_constraintEnd_toStartOf="@+id/txt_deff"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="26dp"
+        android:layout_height="17dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="16dp"
+        android:text="نقاط"
+        android:theme="@style/text" />
+    </android.support.constraint.ConstraintLayout>
+
+    <view
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+
+        />
+
+</LinearLayout>

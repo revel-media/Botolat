@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+
+        android:paddingRight="40dp" android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:textColor="@android:color/black"
+        android:text="الدوريات"
+        android:textSize="25dp"
+        android:background="@android:color/darker_gray"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/txt_pos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:text="م"
+            android:theme="@style/text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_teamname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:text="الفريق"
+            android:theme="@style/text"
+            app:layout_constraintEnd_toStartOf="@+id/txt_pos"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_Play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp"
+            android:layout_marginTop="16dp"
+            android:text="لعب"
+            android:theme="@style/text"
+            app:layout_constraintEnd_toStartOf="@+id/txt_teamname"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_win"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="16dp"
+            android:text="فوز"
+            android:theme="@style/text"
+            app:layout_constraintEnd_toStartOf="@+id/txt_Play"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_draw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="16dp"
+            android:text="تعادل"
+            android:theme="@style/text"
+            app:layout_constraintEnd_toStartOf="@+id/txt_win"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_los"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="16dp"
+            android:text="هزيمة"
+            android:theme="@style/text"
+            app:layout_constraintEnd_toStartOf="@+id/txt_draw"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_deff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:layout_marginTop="16dp"
+            android:text="الفرق"
+            android:theme="@style/text"
+            app:layout_constraintEnd_toStartOf="@+id/txt_los"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_points"
+            android:layout_width="26dp"
+            android:layout_height="17dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="16dp"
+            android:text="نقاط"
+            android:theme="@style/text"
+            app:layout_constraintEnd_toStartOf="@+id/txt_deff"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+    <view
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+         />
+
+
+
+
+</LinearLayout>
